@@ -43,15 +43,20 @@
 
 ## Project Structure
 ```
-├── dataset/                # Dataset directory
-├── .venv/                  # Virtual environment
-├── solar_efficiency.ipynb  # Main analysis notebook
-├── main.py                # Main execution script
-├── requirements.txt       # Project dependencies
-├── optuna_study.db       # Optuna optimization database
-├── optuna_study_improved.db # Improved optimization database
-├── submission.csv        # Model predictions
-├── src.zip              # Source code archive
-├── LICENSE             # MIT License
+├── data/                  # Data directory
+│   ├── raw/              # Raw data files
+│   └── processed/        # Processed data files
+├── notebooks/            # Jupyter notebooks
+│   └── exploration.ipynb # Data exploration notebook
+├── src/                  # Source code
+│   ├── data/            # Data processing scripts
+│   ├── features/        # Feature engineering scripts
+│   ├── models/          # Model training scripts
+│   └── visualization/   # Visualization scripts
+├── tests/               # Test files
+├── models/              # Saved model files
+├── logs/               # Log files
+├── main.py             # Main execution script
+├── requirements.txt    # Project dependencies
 └── README.md          # Project documentation
 ``` 
